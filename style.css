@@ -24,6 +24,11 @@ p {
     padding: 15px;
 }
 
+span {
+    font-family: stevenfont;
+    padding: 30px;
+}
+
 a:link{
     text-decoration: none;
 }
@@ -64,7 +69,7 @@ button:hover{
 }
 
 .imageFoot {
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 
@@ -131,8 +136,8 @@ nav {
 .transparentbox {
     margin: 30px;
     background-color:#fafafa;
-    border: 1px solid black;
     opacity: 0.6;
+    border-radius: 3px;
 }
 
 .transparentbox p {
@@ -144,35 +149,75 @@ nav {
 /*Section Perosonajes*/
 .sectioncontent1 {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 35px;
+    flex-wrap: wrap;
+}
+
+.personaje1 {
+    width: 250px;
+    height: 550px;
+    padding: 10px;
+    text-align: center;
+}
+
+.personaje2 {
+    width: 250px;
+    height: 550px;
+    padding: 10px;
+    text-align: center;
+}
+
+.personaje3 {
+    width: 250px;
+    height: 550px;
+    padding: 10px;
+    text-align: center;
+}
+.personaje4 {
+    width: 250px;
+    height: 550px;
+    padding: 10px;
+    text-align: center;
+    overflow-y: overlay;
 }
 
 .personaje1 img {
-    width: 180px;
-    height: auto;
+    height: 180px;
+    width: auto;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .personaje2 img {
-    width: 180px;
-    height: auto;
+    height: 180px;
+    width: auto;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .personaje3 img {
-    width: 180px;
-    height: auto;
+    height: 180px;
+    width: auto;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .personaje4 img {
-    width: 180px;
-    height: auto;
+   height: 180px;
+    width: auto;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.articlecontet {
-    display: flex;
-    flex-direction: row;
-    text-align: end;
+.personaje1 span {
+    
 }
 
 /*Section Autora*/
