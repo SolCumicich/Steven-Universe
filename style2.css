@@ -1,0 +1,107 @@
+:root {
+    /*Colors*/
+    --main-black: #000000;
+    --main-pink: #ff1493;
+    --secundary-pink: #f08080;
+    --light-purple: #d8bfd8;
+    --dark-purple: #570657;
+
+
+    /*Sizes*/
+    --main-margin: 1rem;
+    --main-padding: 6rem;
+    --secondary-margin: 3rem;
+    --main-mobile-padding: 3rem;
+}
+
+@font-face {
+    font-family: stevenfont;
+    src: url(./assets/StevenFont.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: var(--main-black);
+}
+
+* img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    width: 100 vw;
+    height: 100 vh;
+    max-width: 100%;
+    max-height: 100%;
+    background-image:url(./assets/fondo.png);
+    font-size: 1rem;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-family: stevenfont;
+    color:goldenrod;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-purple);
+}
+
+span {
+    font-family: stevenfont;
+    color: var(--light-purple);
+}
+
+span a {
+    font-family: stevenfont;
+}
+
+button {
+    border-radius: 10px;
+    color: var(--light-purple);
+}
+
+button:hover{
+    border-color: var(--main-pink);
+    background-color: var(--secundary-pink);
+}
+
+/* Mobile */
+@media (min-width: 320px){
+    .headercontent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: var(--main-mobile-padding);
+    }
+
+    .headercontent h1 {
+        width: 30%;
+
+    }
+    .headercontent div: last-child {
+
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px){
+}
+
+/*Deskpot*/
+@media (min-width: 1200px){
+    .headercontent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
