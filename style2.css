@@ -11,7 +11,7 @@
     --main-margin: 1rem;
     --main-padding: 6rem;
     --secondary-margin: 3rem;
-    --main-mobile-padding: 3rem;
+    --main-mobile-padding: 2rem;
 }
 
 @font-face {
@@ -51,6 +51,9 @@ h1 {
     color:goldenrod;
 }
 
+.logo {
+    border-radius: 50%;
+}
 a {
     text-decoration: none;
     color: var(--dark-purple);
@@ -79,22 +82,90 @@ button:hover{
 @media (min-width: 320px){
     .headercontent {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         padding: var(--main-mobile-padding);
     }
 
     .headercontent h1 {
+        font-size: 15px;
+    }
+
+    .headercontent div:first-child {
         width: 30%;
-
     }
-    .headercontent div: last-child {
 
+    .headercontent div:last-child {
+        width: 18%;
     }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 2rem;
+    }
+
+    .sectioncontent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--main-mobile-padding);
+    }
+
+    .image2 {
+        border-radius: 5%;
+    }
+
+    .transparentbox {
+        background-color:#fafafa;
+        opacity: 0.6;
+        border-radius: 3px;
+    }
+
+    .transparentbox p {
+        font-weight: bolder;
+        color: #000000;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .Footercontent {
+        display: flex;
+        justify-content: space-between;
+        padding: var(--main-mobile-padding);
+    }
+
+    .Footercontent span {
+        font-size: 10px;
+    }
+
+    .Footercontent div:first-child {
+        width: 18%;
+    }
+
+    .Footercontent div:last-child {
+        width: 10%;
+    }
+
+
 }
+
 
 /*Tablet*/
 @media (min-width: 768px){
+
+    .headercontent h1 {
+        font-size: 35px;
+    }
+
+    .headercontent div:first-child {
+        width: 40%;
+    }
+
+    .headercontent div:last-child {
+        width: 10%;
+    }
 }
 
 /*Deskpot*/
